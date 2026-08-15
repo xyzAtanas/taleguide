@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Unofficial Tale Stars Guide website made by xyzAtanas"
+    />
+    <title>Tale Stars Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="mobile-header">
+      <a class="brand brand--mobile" href="#home" aria-label="Tale Stars Guide home">
+        <span class="brand-mark"><img src="https://talemods.com/images/talestarsnbg.png" alt="" /></span>
+        <span>
+          <strong>Tale Stars</strong>
+          <small>Guide</small>
+        </span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="sidebar">
+        <span class="menu-button__icon" aria-hidden="true">☰</span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+    </header>
+
+    <div class="site-shell">
+      <aside class="sidebar" id="sidebar" aria-label="Site navigation">
+        <div class="sidebar__top">
+          <a class="brand" href="#home" aria-label="Tale Stars Guide home">
+            <span class="brand-mark"><img src="https://talemods.com/images/talestarsnbg.png" alt="" /></span>
+            <span>
+              <strong>Tale Stars</strong>
+              <small>Guide</small>
+            </span>
+          </a>
+          <button class="sidebar-close" type="button" aria-label="Close navigation">×</button>
+        </div>
+
+        <div class="sidebar__intro">
+          <p>Unofficial Tale Stars Guide website made by xyzAtanas</p>
+        </div>
+
+        <label class="search-box" for="guide-search">
+          <span aria-hidden="true">⌕</span>
+          <input id="guide-search" type="search" placeholder="Search guides" autocomplete="off" />
+          <kbd>/</kbd>
+        </label>
+
+        <nav class="sidebar__nav" aria-label="Guide sections">
+          <p class="nav-label">Overview</p>
+          <a class="nav-link is-active" href="#home" data-nav-link="home">Home</a>
+          <a class="nav-link" href="#requirements" data-nav-link="requirements">Before you start</a>
+
+          <p class="nav-label">Guides</p>
+          <a class="nav-link" href="#free-no-pc" data-nav-link="free-no-pc">Free, No PC</a>
+          <a class="nav-link" href="#free-pc" data-nav-link="free-pc">Free, PC</a>
+          <a class="nav-link" href="#paid-no-pc" data-nav-link="paid-no-pc">Paid, No PC</a>
+        </nav>
+
+        <div class="sidebar__footer">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Community-maintained</span>
+        </div>
+      </aside>
+
+      <main id="main-content" class="main-content">
+        <section class="hero-section page-section" id="home" data-section="home">
+          <div class="eyebrow"><span class="eyebrow__line"></span>Documentation</div>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="kicker">Tale Stars · iOS installation</p>
+              <h1>A calm place to start your <em>Tale Stars</em> setup.</h1>
+              <p class="hero-description">
+                Unofficial Tale Stars Guide website made by xyzAtanas
+              </p>
+              <p class="hero-note">
+                Choose the route that matches your setup. Each guide keeps the steps in order and calls out anything you need before beginning.
+              </p>
+              <div class="hero-actions">
+                <a class="button button--primary" href="#requirements">Read the requirements <span aria-hidden="true">↓</span></a>
+                <a class="text-link" href="#free-no-pc">Jump to the first guide <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-meta" aria-label="Guide summary">
+            <div><strong>03</strong><span>installation routes</span></div>
+            <div><strong>iOS</strong><span>device-focused steps</span></div>
+            <div><strong>v1</strong><span>community notes</span></div>
+          </div>
+        </section>
+
+        <section class="content-section page-section" id="requirements" data-section="requirements">
+          <div class="section-heading">
+            <div>
+              <p class="kicker">Start here</p>
+              <h2>Pick your installation route</h2>
+            </div>
+            <p class="section-summary">Three guides, one destination. Use the filters or choose a card to get moving.</p>
+          </div>
+
+          <div class="guide-grid" id="guide-cards">
+            <a class="guide-card" href="#free-no-pc" data-searchable="free no pc brain tale stars ipa dns ksign">
+              <div class="guide-card__top"><span class="guide-number">01</span><span class="pill">Free · No PC</span></div>
+              <h3>Free, No PC</h3>
+              <p>Sign and install Tale Stars directly on your iPhone with Ksign and Tale DNS.</p>
+              <span class="guide-card__link">Open guide <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="guide-card" href="#free-pc" data-searchable="free pc sideloadly itunes developer mode apple id">
+              <div class="guide-card__top"><span class="guide-number">02</span><span class="pill">Free · PC</span></div>
+              <h3>Free, PC</h3>
+              <p>Use Sideloadly from a computer, then enable Developer Mode and trust the profile.</p>
+              <span class="guide-card__link">Open guide <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="guide-card" href="#paid-no-pc" data-searchable="paid no pc muacert certificate ksign udid developer mode">
+              <div class="guide-card__top"><span class="guide-number">03</span><span class="pill">Paid · No PC</span></div>
+              <h3>Paid, No PC</h3>
+              <p>Use a paid certificate flow through muacert, then install and sign with Ksign.</p>
+              <span class="guide-card__link">Open guide <span aria-hidden="true">↗</span></span>
+            </a>
+          </div>
+          <p class="empty-state" id="empty-state" hidden>No matching guide found. Try another search.</p>
+        </section>
+
+        <div class="content-divider" aria-hidden="true"><span></span><span></span><span></span></div>
+
+        <section class="guide-section page-section" id="free-no-pc" data-section="free-no-pc" data-searchable="free no pc brain tale stars ipa dns required tale dns ksign anti-revoke">
+          <div class="guide-section__header">
+            <div class="guide-index">01</div>
+            <div>
+              <p class="kicker">Free installation · no computer</p>
+              <h2>Free, No PC</h2>
+              <p>Install the IPA on your iPhone using Tale DNS and Ksign.</p>
+              <p class="guide-credit">Guide by: <strong>xyzAtanas</strong></p>
+            </div>
+          </div>
+
+          <div class="requirements-block">
+            <h3>Requirements</h3>
+            <ul class="check-list">
+              <li>Brain</li>
+              <li>Tale Stars IPA</li>
+            </ul>
+          </div>
+
+          <aside class="callout callout--warning">
+            <div class="callout__icon" aria-hidden="true">!</div>
+            <div>
+              <h3>🔴 DNS REQUIRED</h3>
+              <p>If it says “DNS REQUIRED” above, this step is required before continuing.</p>
+              <ol>
+                <li>Download <a href="https://xyzatanas.github.io/taleguide/Tale%20DNS.mobileconfig" target="_blank" rel="noopener">Tale DNS</a>.</li>
+                <li>Go to <strong>Settings → General → VPN &amp; Device Management → Tale DNS</strong>, then press <strong>Install</strong>.</li>
+                <li>Go back to <strong>VPN &amp; Device Management → DNS</strong> and select <strong>Tale DNS Install Only</strong>.</li>
+              </ol>
+            </div>
+          </aside>
+
+          <div class="step-group">
+            <div class="step-group__title"><span>01</span><h3>Download Ksign</h3></div>
+            <ol class="steps">
+              <li>Go to <a href="https://khoindvn.io.vn" target="_blank" rel="noopener">khoindvn.io.vn</a>.</li>
+              <li>Scroll down and press <strong>Ksign</strong>.</li>
+              <li>Press <strong>Install</strong> on every Ksign option until one works.</li>
+              <li>Press <strong>Install</strong> if there is a pop-up. If there are ads, close them.</li>
+              <li>Go to your home screen and press <strong>Ksign</strong>. It should ask you to trust the certificate.</li>
+              <li>Go to <strong>Settings → VPN &amp; Device Management → Certificate name → Trust</strong>.</li>
+              <li>You will be prompted to trust the certificate.</li>
+              <li>Once you are back at the home screen, change the DNS to <strong>Anti-Revoke</strong> if you have it.</li>
+            </ol>
+          </div>
+
+          <div class="step-group">
+            <div class="step-group__title"><span>02</span><h3>Using Ksign</h3></div>
+            <ol class="steps">
+              <li>Open Ksign.</li>
+              <li>Go to <strong>Library</strong>.</li>
+              <li>Press the <strong>+</strong>, then <strong>Import from Files</strong>, and select your IPA.</li>
+              <li>Once imported, change the DNS setting to <strong>Install Only</strong> if you have that option.</li>
+              <li>Press <strong>Tale Stars → Sign &amp; Install → Identifier</strong> and change it to <code>com.tale.stars</code>.</li>
+              <li>Go back and press <strong>Start Signing</strong>.</li>
+              <li>Wait until it says <strong>Installing</strong>.</li>
+              <li>Press <strong>Install</strong> on the prompt.</li>
+              <li>Wait until it installs.</li>
+            </ol>
+          </div>
+
+          <div class="step-group">
+            <div class="step-group__title"><span>03</span><h3>Enabling Anti-Revoke DNS</h3><span class="optional-label">Optional · recommended</span></div>
+            <ol class="steps">
+              <li>If you have not already, install Tale DNS.</li>
+              <li>Go to <strong>Settings → General → VPN &amp; Device Management → DNS</strong> and select <strong>Tale DNS Anti-Revoke</strong>.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="guide-section page-section" id="free-pc" data-section="free-pc" data-searchable="free pc sideloadly itunes tale stars ipa developer mode profile trust apple id">
+          <div class="guide-section__header">
+            <div class="guide-index">02</div>
+            <div>
+              <p class="kicker">Free installation · computer required</p>
+              <h2>Free, PC</h2>
+              <p>Use Sideloadly on your computer, then finish setup on your iPhone.</p>
+              <p class="guide-credit">Guide by: <strong>vsayc</strong></p>
+            </div>
+          </div>
+
+          <div class="requirements-block">
+            <h3>Requirements</h3>
+            <p>Download the necessary files to your computer:</p>
+            <ul class="link-list">
+              <li><a href="https://sideloadly.io" target="_blank" rel="noopener">Sideloadly</a></li>
+              <li>iTunes</li>
+              <li>Tale Stars IPA</li>
+            </ul>
+          </div>
+
+          <div class="step-group">
+            <div class="step-group__title"><span>01</span><h3>Computer setup &amp; installation</h3></div>
+            <ol class="steps">
+              <li>Open Sideloadly on your computer.</li>
+              <li>Connect your iPhone via USB.</li>
+              <li>Select the downloaded <code>.ipa</code> file.</li>
+              <li>Enter your Apple ID and sign in.</li>
+              <li>Click <strong>Start</strong> to begin.</li>
+            </ol>
+          </div>
+
+          <div class="step-group">
+            <div class="step-group__title"><span>02</span><h3>Enable Developer Mode</h3></div>
+            <p>On your iPhone, enable Developer Mode before launching:</p>
+            <ol class="steps">
+              <li>Open <strong>Settings</strong>.</li>
+              <li>Tap <strong>Privacy &amp; Security</strong>.</li>
+              <li>Scroll down and tap <strong>Developer Mode</strong>.</li>
+              <li>Toggle it on and restart.</li>
+            </ol>
+          </div>
+
+          <div class="step-group">
+            <div class="step-group__title"><span>03</span><h3>Trust the profile</h3></div>
+            <ol class="steps">
+              <li>After the restart, open <strong>Settings</strong>.</li>
+              <li>Go to <strong>General → VPN &amp; Device Management</strong>.</li>
+              <li>Select the profile associated with your Apple ID.</li>
+              <li>Tap <strong>Trust</strong>, then confirm.</li>
+            </ol>
+            <p class="completion-note">The app will now launch.</p>
+          </div>
+        </section>
+
+        <section class="guide-section page-section" id="paid-no-pc" data-section="paid-no-pc" data-searchable="paid no pc muacert top up funds add device udid certificate ksign ipa tale stars developer mode game mode backloop">
+          <div class="guide-section__header">
+            <div class="guide-index">03</div>
+            <div>
+              <p class="kicker">Paid installation · no computer</p>
+              <h2>Paid, No PC</h2>
+              <p>Use a paid certificate service, then install the signer app and Tale Stars on your iPhone.</p>
+              <p class="guide-credit">Guide by: <strong>xyzAtanas</strong></p>
+            </div>
+          </div>
+
+          <div class="notice-block">
+            <span class="notice-block__mark" aria-hidden="true">i</span>
+            <p>Certificate prices and availability can change. Check the main muacert website for current details before topping up.</p>
+          </div>
+
+          <ol class="steps steps--long">
+            <li>Open <a href="https://muacert.com" target="_blank" rel="noopener">muacert.com</a> in your browser. Create an account or log in if you already have one.</li>
+            <li>Go to the top-up page and add funds. Check the main website for current certificate prices.</li>
+            <li>Go to <strong>Add Device</strong> and press <strong>Get UDID</strong>. Download the profile, then open <strong>Settings → Profile Downloaded</strong> and install it. This will redirect you back to the page.</li>
+            <li>Choose your currency (VND or USD), select the certificate option you want, then press <strong>Add Device</strong>.</li>
+            <li>You will be redirected to your device’s page. Press <strong>Install signer app</strong>, select <strong>Ksign</strong>, and press <strong>Download Now</strong>. Tap <strong>Install</strong> on the pop-up.</li>
+            <li>Open <strong>Settings → Privacy &amp; Security → Developer Mode</strong> and toggle it on. Follow the instructions when your phone restarts. Developer Mode is required for Ksign to work properly.</li>
+            <li>Open Ksign and check that your certificate is imported in <strong>Settings</strong>. Go to <strong>Library</strong>, press the <strong>+</strong> button, and select the Tale Stars IPA file. You can download the IPA from <a href="https://t.me/talefiles/27" target="_blank" rel="noopener">t.me/talefiles/27</a>.</li>
+            <li>Once the IPA is imported, press <strong>Tale Stars → Sign &amp; Install → Properties</strong> and enable <strong>Game Mode</strong> for better performance.</li>
+            <li>Wait until you see “<code>*backloop.dev</code> wants to install Tale Stars”, then press <strong>Install</strong>. Wait until it says completed.</li>
+            <li>Done! You can now open Tale Stars from your home screen.</li>
+          </ol>
+        </section>
+
+        <footer class="site-footer">
+          <p><strong>Tale Stars Guide</strong> is an unofficial community resource by xyzAtanas.</p>
+          <p>Links and device menus can change over time. Use the original sources for the latest information.</p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
